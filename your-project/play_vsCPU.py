@@ -64,53 +64,53 @@ class PlayerVSCPU(engine.State):
        if (self.cells.matrix[0] == self.cells.matrix[1] and self.cells.matrix[0] == self.cells.matrix[2]) and self.cells.matrix[0] !='empty' and not self.finish:
            self.finish = True
            if self.cells.matrix[0] == 'circle':
-               self.result = 'Player wins'
+               self.game.result = 'Player wins'
            else:
-               self.result = 'CPU wins'
+               self.game.result = 'CPU wins'
        elif (self.cells.matrix[3] == self.cells.matrix[4] and self.cells.matrix[3] == self.cells.matrix[5]) and self.cells.matrix[3] !='empty' and not self.finish:
            self.finish = True
            if self.cells.matrix[3] == 'circle':
-               self.result = 'Player wins'
+               self.game.result = 'Player wins'
            else:
-               self.winner = 'CPU wins'
+               self.game.result = 'CPU wins'
        elif (self.cells.matrix[6] == self.cells.matrix[7] and self.cells.matrix[6] == self.cells.matrix[8]) and self.cells.matrix[6] !='empty' and not self.finish:
            self.finish = True
            if self.cells.matrix[6] == 'circle':
-               self.result = 'Player wins'
+               self.game.result = 'Player wins'
            else:
-               self.result = 'CPU wins'
+               self.game.result = 'CPU wins'
        elif (self.cells.matrix[0] == self.cells.matrix[3] and self.cells.matrix[0] == self.cells.matrix[6]) and self.cells.matrix[0] !='empty' and not self.finish:
            self.finish = True
            if self.cells.matrix[0] == 'circle':
-               self.result = 'Player wins'
+               self.game.result = 'Player wins'
            else:
-               self.result = 'CPU wins'
+               self.game.result = 'CPU wins'
        elif (self.cells.matrix[1] == self.cells.matrix[4] and self.cells.matrix[1] == self.cells.matrix[7]) and self.cells.matrix[1] !='empty' and not self.finish:
            self.finish = True
            if self.cells.matrix[1] == 'circle':
-               self.result = 'Player wins'
+               self.game.result = 'Player wins'
            else:
-               self.result = 'CPU wins'
+               self.game.result = 'CPU wins'
        elif (self.cells.matrix[2] == self.cells.matrix[5] and self.cells.matrix[2] == self.cells.matrix[8]) and self.cells.matrix[2] !='empty' and not self.finish:
            self.finish = True
            if self.cells.matrix[2] == 'circle':
-               self.result = 'Player wins'
+               self.game.result = 'Player wins'
            else:
-               self.result = 'CPU wins'
+               self.game.result = 'CPU wins'
        elif (self.cells.matrix[0] == self.cells.matrix[4] and self.cells.matrix[0] == self.cells.matrix[8]) and self.cells.matrix[0] !='empty' and not self.finish:
            self.finish = True
            if self.cells.matrix[0] == 'circle':
-               self.result = 'Player wins'
+               self.game.result = 'Player wins'
            else:
-               self.result = 'CPU wins'
+               self.game.result = 'CPU wins'
        elif (self.cells.matrix[2] == self.cells.matrix[4] and self.cells.matrix[2] == self.cells.matrix[6]) and self.cells.matrix[2] !='empty' and not self.finish:
            self.finish = True
            if self.cells.matrix[2] == 'circle':
-               self.result = 'Player wins'
+               self.game.result = 'Player wins'
            else:
-               self.result = 'CPU wins'
+               self.game.result = 'CPU wins'
        if 'empty' not in self.cells.matrix:
-           self.result = 'Draw'
+           self.game.result = 'DrawPvsCPU'
            self.finish = True
            
    def event(self,event):
