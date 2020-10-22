@@ -18,7 +18,7 @@ import game_board
 ##------------------------------------------------------Player_vs_Player screen ---------------------------------
 class PlayerVSPlayer(engine.State):
     def init(self):
-        self.board = pygame.image.load("board.png")
+        self.board = pygame.image.load("im&font/board.png")
         
         #Initiate the sprites
         self.cells = game_board.GameBoard()

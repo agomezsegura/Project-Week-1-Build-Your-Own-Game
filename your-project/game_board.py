@@ -10,7 +10,7 @@ from pgu import text
 class GameBoardCell(pygame.sprite.Sprite):
     def __init__(self,pos,mark):
         super().__init__()
-        self.image = pygame.image.load(mark+'.png')
+        self.image = pygame.image.load('im&font/'+mark+'.png')
         self.rect = self.image.get_rect()
         self.pos = pos
         self.mark = mark
