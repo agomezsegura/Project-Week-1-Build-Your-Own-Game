@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[4]:
 
 
 import pygame
@@ -12,8 +12,7 @@ class GameBoardCell(pygame.sprite.Sprite):
         super().__init__()
         self.image = pygame.image.load(mark+'.png')
         self.rect = self.image.get_rect()
-        self.rect.center = pos[0]
-        self.num = pos[1]
+        self.pos = pos
         self.mark = mark
 
 #    def update(self):
@@ -25,4 +24,9 @@ class GameBoard(pygame.sprite.Group):
         super().__init__()
         self.matrix = ['empty', 'empty', 'empty','empty','empty','empty',
                        'empty','empty','empty']
+        self.positions = ((125,125),(375,125),(625,125),(125,375),(375,375),(625,375),(125,625),(375,625),(625,625))
+    
+    def positioning(self):
+        for cell in self:
+            cell.rect.center = self.positions[cell.pos]
 
