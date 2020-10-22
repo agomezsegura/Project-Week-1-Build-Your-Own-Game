@@ -30,3 +30,11 @@ class GameBoard(pygame.sprite.Group):
         for cell in self:
             cell.rect.center = self.positions[cell.pos]
 
+class Button(pygame.sprite.Sprite):
+    def __init__(self,im,pos):
+        super().__init__()
+        self.image=pygame.image.load(im)
+        self.rect=self.image.get_rect()
+        self.rect.center=pos
+        self.click = False
+
