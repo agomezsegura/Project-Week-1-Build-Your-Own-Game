@@ -19,7 +19,7 @@ This project is the first version I have programmed of the game *Tic-Tac-Toe*. I
 
 ## Rules
 *Briefly describe the rules of the game.*
-Tic-Tac-Toe is a turn based game where two players aim to place three *marks* in a row. The board is formed by 9 cells where the players can assign their *marks* if the cell is empty. The game starts will all the cells *empty*, enabling the first player to assign a *mark* anywhere. After one player has ticked a square, it is the turn of the next player to assign his mark, until all the cells are full. If at any point in the game a player manages to place three *marks* in a row, the game finishes and that player wins the game. If the game ends when all the cells are *marked* the match is a draw.
+Tic-Tac-Toe is a turn based game where two players aim to place three *marks* in a row. The board is formed by 9 cells where the players can assign their *marks* if the cell is empty. The game starts will all the cells *empty*, enabling the first player to assign a *mark* anywhere. After one player has *marked* a cell, it is the turn of the next player to assign his mark, until all the cells are full. If at any point in the game a player manages to place three *marks* in a row, the game finishes and that player wins the game. If the game ends when all the cells are *marked* the match is a draw.
 
 ## Workflow
 *Outline the workflow you used in your project. What are the steps you went through?*
