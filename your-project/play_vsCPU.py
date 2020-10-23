@@ -27,6 +27,7 @@ class PlayerVSCPU(engine.State):
        
        self.turn = random.choice([1,2])
        self.finish = False
+       self.result = ''
        self._init = 0
    
    def paint(self, s):
@@ -109,7 +110,7 @@ class PlayerVSCPU(engine.State):
                self.game.result = 'Player wins'
            else:
                self.game.result = 'CPU wins'
-       if 'empty' not in self.cells.matrix:
+       elif 'empty' not in self.cells.matrix and not self.finish:
            self.game.result = 'DrawPvsCPU'
            self.finish = True
            

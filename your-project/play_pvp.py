@@ -12,7 +12,7 @@ import time
 import game_board
 
 
-# In[ ]:
+# In[2]:
 
 
 ##------------------------------------------------------Player_vs_Player screen ---------------------------------
@@ -93,13 +93,9 @@ class PlayerVSPlayer(engine.State):
                 self.game.result = 'Player 1 wins'
             else:
                 self.game.result = 'Player 2 wins'
-        if 'empty' not in self.cells.matrix:
-            if self.result == 'First check done':
-                self.final()
-                self.game.result = 'DrawPvP'
-                self.finish = True
-            else:
-                self.result = 'Firs check done'
+        if 'empty' not in self.cells.matrix and not self.finish:
+            self.game.result = 'DrawPvP'
+            self.finish = True
             
     def event(self,event):
         if event.type is KEYDOWN:
