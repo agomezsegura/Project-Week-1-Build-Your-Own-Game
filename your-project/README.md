@@ -1,7 +1,7 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Title of Your Project
-*[Your Name]* Àlex Gómez Segura
+# Build Your Own Game - 'Tic-Tac-Toe'
+*by* Àlex Gómez Segura
 
 *[Your Cohort, Campus & Date]* Full time bootcamp in Data Analytics at IronHack, 23/10/2020.
 
@@ -15,7 +15,7 @@
 ## Project Description
 *Write a short description of your project. Write 1-2 sentences about the game you chose to build and why.*
 
-This project is the first version I have programmed of the game Tic-Tac-Toe. I've chosen this game because it is very interactive with the player while having simple mechanics.
+This project is the first version I have programmed of the game *Tic-Tac-Toe*. I've chosen this game because it is very interactive with the player while having simple mechanics.
 
 ## Rules
 *Briefly describe the rules of the game.*
@@ -24,7 +24,7 @@ Tic-Tac-Toe is a turn based game where two players aim to place three *marks* in
 ## Workflow
 *Outline the workflow you used in your project. What are the steps you went through?*
 The workflow followed during the project is shown in the following image:
-![workflow.png](attachment:workflow.png)
+![workflow.png](workflow.png)
 
 ## Organization
 *How did you organize your work? Did you use any tools like a kanban board?*
